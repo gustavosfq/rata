@@ -24,7 +24,7 @@ function create() {
 	game.physics.arcade.enable(this.rata);
 	this.rata.body.collideWorldBounds = true;
 	this.timer = game.time.events.loop(time, function() {
-		if (Math.random() < 0.6) {
+		if (Math.random() < 0.4) {
 			var cheese = game.add.sprite(Math.floor(Math.random() * width) + 1, 0, 'queso');
 			game.physics.arcade.enable(cheese);
 			cheese.checkWorldBounds = true;
